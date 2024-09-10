@@ -12,14 +12,39 @@
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
-$primary   : #1976D2;
-$secondary : #26A69A;
-$accent    : #9C27B0;
+$primary : #eaf91a;
+$secondary : #58ebbf;
+$accent : #061e51;
 
-$dark      : #1D1D1D;
+$dark : #1D1D1D;
 $dark-page : #121212;
 
-$positive  : #21BA45;
-$negative  : #C10015;
-$info      : #31CCEC;
-$warning   : #F2C037;
+$positive : #21BA45;
+$negative : #C10015;
+$info : #31CCEC;
+$warning : #F2C037;
+// Sub color
+$black: #202020;
+$background: #eff4f1;
+$lightgrey: #f1f3f5;
+$border: #d6d6d6;
+$placeholder: #8a8a8a;
+
+$phone: 374px;
+$pad: 767px;
+$pc: 1023px;
+$lg: 1279px;
+//平板
+@mixin pad() {
+  @media all and (max-width: $pc) {
+    @content;
+  }
+}
+
+@mixin pc() {
+  @media all and (max-width: $lg) {
+    @content;
+  }
+}
+
+$body-font-size: 16px;

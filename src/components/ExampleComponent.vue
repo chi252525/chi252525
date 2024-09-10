@@ -1,37 +1,22 @@
 <template>
   <div>
-    <p>{{ title }}</p>
-    <ul>
-      <li v-for="todo in todos" :key="todo.id" @click="increment">
-        {{ todo.id }} - {{ todo.content }}
-      </li>
-    </ul>
-    <p>Count: {{ todoCount }} / {{ meta.totalCount }}</p>
-    <p>Active: {{ active ? 'yes' : 'no' }}</p>
-    <p>Clicks on todos: {{ clickCount }}</p>
+    <div>
+      <ul>
+        <li>首頁 動畫</li>
+        <li>MUSIC- Music card</li>
+        <li>Sea & Tree -輪播</li>
+        <li>Lemon Slice -Blog post</li>
+        <li>Contact -個人資訊</li>
+        <li>履歷 - Timeline</li>
+        <li>登入</li>
+        <li>session</li>
+        <li>購物車</li>
+        <li>購物商品頁</li>
+        <li>Dialog</li>
+        <li>loadingbar</li>
+      </ul>
+    </div>
   </div>
 </template>
 
-<script setup lang="ts">
-import { computed, ref } from 'vue';
-import { Todo, Meta } from './models';
-
-interface Props {
-  title: string;
-  todos?: Todo[];
-  meta: Meta;
-  active: boolean;
-};
-
-const props = withDefaults(defineProps<Props>(), {
-  todos: () => []
-});
-
-const clickCount = ref(0);
-function increment() {
-  clickCount.value += 1;
-  return clickCount.value;
-}
-
-const todoCount = computed(() => props.todos.length);
-</script>
+<script setup lang="ts"></script>

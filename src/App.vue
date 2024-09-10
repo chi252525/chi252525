@@ -1,4 +1,5 @@
 <template>
+    <GuildLineController  />
   <router-view />
 </template>
 
@@ -6,4 +7,6 @@
 defineOptions({
   name: 'App'
 });
+
+import GuildLineController from './pages/GuildLine.vue/GuildLineController.vue';
 </script>
