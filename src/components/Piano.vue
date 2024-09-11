@@ -51,16 +51,6 @@ function getKeyStyle(index: number) {
     var blackKeyOffset = 0 - index * 38; // Adjust this value to set spacing
     var whiteKeyWidth = 20; // Width of white keys
     var offset = whiteKeyWidth / 2 - blackKeyOffset / 2;
-    console.log(
-      'index:' +
-        index +
-        ' whiteKeyWidth:' +
-        whiteKeyWidth +
-        ' offset:' +
-        offset +
-        'blackKeyOffset:' +
-        blackKeyOffset
-    );
     if (index >= 6) {
       blackKeyOffset += -40;
       offset = whiteKeyWidth / 2 - blackKeyOffset / 2;
