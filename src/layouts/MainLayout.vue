@@ -8,10 +8,9 @@
       <q-space />
 
       <q-tabs shrink>
-        <q-tab name="tab1" label="Music" @click="navigate('music')" />
-        <q-tab name="tab2" label="Sea & Tree" @click="navigate('seaAndTree')" />
-        <q-tab name="tab3" label="Slice" @click="navigate('Slice')" />
-        <q-tab name="tab4" label="Contact" @click="navigate('contact')" />
+        <q-tab name="tab1" label="Sea & Tree" @click="navigate('seaAndTree')" />
+        <q-tab name="tab2" label="About" @click="navigate('About')" />
+        <q-tab name="tab3" label="Contact" @click="navigate('contact')" />
       </q-tabs>
     </q-toolbar>
 

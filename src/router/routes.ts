@@ -13,13 +13,35 @@ const routes: RouteRecordRaw[] = [
     ],
   },
   {
+    path: '/login',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      {
+        path: '登入頁',
+        name: 'login',
+        component: () => import('pages/Login/Login.vue'),
+      },
+    ],
+  },
+  {
+    path: '/about',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      {
+        path: '',
+        name: 'about',
+        component: () => import('pages/Login/Login.vue'),
+      },
+    ],
+  },
+  {
     path: '/music',
     component: () => import('layouts/MainLayout.vue'),
     children: [
       {
         path: '',
         name: 'music',
-        component: () => import('pages/Home/LoginHome.vue'),
+        component: () => import('pages/Login/Login.vue'),
       },
     ],
   },
@@ -30,18 +52,18 @@ const routes: RouteRecordRaw[] = [
       {
         path: '',
         name: 'seaAndTree',
-        component: () => import('pages/SeaAndTree/SeaAndTree.vue'), // Adjust the path to the correct component
+        component: () => import('pages/SeaAndTree/SeaAndTree.vue'),
       },
     ],
   },
   {
-    path: '/slice',
+    path: '/about',
     component: () => import('layouts/MainLayout.vue'),
     children: [
       {
         path: '',
-        name: 'Slice',
-        component: () => import('pages/Slice/Slice.vue'), // Adjust the path to the correct component
+        name: 'About',
+        component: () => import('pages/About/About.vue'), // Adjust the path to the correct component
       },
     ],
   },

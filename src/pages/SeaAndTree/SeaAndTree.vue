@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md">
-    <div class="q-gutter-md">
+    <div class="q-gutter-md q-container">
       <q-carousel
         v-model="slide"
         transition-prev="scale"
@@ -81,6 +81,9 @@
           </div>
         </q-carousel-slide>
       </q-carousel>
+    </div>
+    <div class="q-pa-md">
+      <q-video src="https://www.youtube.com/embed/k3_tw44QsZQ?rel=0" />
     </div>
   </div>
 </template>
