@@ -100,7 +100,7 @@
     </q-card>
 
     <div class="row justify-center items-center container-fet">
-      <img class="q-mr-sm" src="~/assets/images/fetImg.png" alt="" />
+      <img class="q-mr-sm" src="~/assets/images/null-logo.jpg" alt="" />
       <span class="text-info"></span>
       <span class="text-info">(Version: {{ version }})</span>
     </div>
